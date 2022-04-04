@@ -76,6 +76,7 @@ nav .logo {
 
 #navbar .menu .icon {
     height: 1rem;
+    margin-left: 1rem;
 }
 
 #navbar .menu .icon line {
