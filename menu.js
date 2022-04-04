@@ -43,4 +43,4 @@ function menuItemLeave() {
 
 
     
-console.log(iconOpen);
+/*console.log(iconOpen);*/
