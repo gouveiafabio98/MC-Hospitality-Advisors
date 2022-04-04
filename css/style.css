@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+:root {
+    --white: #F2F2F2;
+    --green: #6D8474;
+    --brown: #3F3939;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}*/
+
+body {
+    background-color: var(--white);
+}
+
+nav {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    padding: 3em 0;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+nav .logo {
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    height: 8vh;
+    cursor: pointer;
+}
+
+#navbar {
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 300;
+    position: absolute;
+    left: 95%;
+    transform: translate(-100%, 0);
+    width: fit-content;
+}
+
+#navbar div:not(:last-child) {
+    margin-right: 3em;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+    transition: letter-spacing 500ms;
+}
+
+#navbar .menu {
+    cursor: pointer;
+}
+
+#navbar .menu:hover {
+    letter-spacing: 0.3em;
+}
+
+#navbar .menu .icon {
+    height: 1rem;
+}
+
+#navbar .menu .icon line {
+    fill:none;stroke:#fff;stroke-miterlimit:10;
+}
+
+#navbar .language {
+    left: 95%;
+    transform: translate(-100%, 0%);
+}
+
+#navbar .language span {
+    cursor: pointer;
+}
+
+#navbar .language .selected {
+    font-weight: 700;
+}
+
+#landing {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#landing video {
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+    filter: brightness(0.9);
+    z-index: -1;
+}
+
+
+/* ---- Button ---- */
+
+.btt-main {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 32px;
+    width: max-content;
+    padding: 0.4rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 300;
+    transition: background-color 500ms, color 500ms, letter-spacing 500ms;
+    cursor: pointer;
+}
+
+.btt-main:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 0.2rem;
+}
+
+#landing .btt-main, #menu .btt-main {
+    position: absolute;
+    left: 95%;
+    top: 95%;
+    transform: translate(-100%, -100%);
+}
+
+
+/* ---- SLOGAN ---- */
+
+#landing .slogan {
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: white;
+    font-size: 4.2em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    transform: translate(0%, -100%);
+}
+
+#landing .slogan span:nth-child(1) {
+    margin-left: 6rem;
+}
+
+#landing .slogan span:nth-child(3) {
+    margin-left: 4rem;
+}
+
+
+/* ---- MAIN ---- */
+
+main>div {
+    height: 100vh;
+    display: grid;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;*/
+}
+
+main>div img {
+    max-height: 70vh;
+    border-radius: 100%;
+}
+
+main>div:nth-child(2n) {
+    background-color: var(--green);
+}
+
+main .content {
+    width: 30%;
+}
+
+main .title span {
+    display: block;
+    text-align: center;
+}
+
+main .title .identifier {
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+}
+
+main .title .main {
+    font-weight: 400;
+    font-size: 1.7em;
+    letter-spacing: 0.25em;
+}
+
+main .text {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+
+/* ---- MENU ---- */
+
+#menu {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transform: translate(0, -100%);
+    height: 100vh;
+    background-color: var(--brown);
+    transition: transform 500ms;
+}
+
+#menu.active {
+    transform: translate(0, 0);
+}
+
+#menu .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+#menu .list li {
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: white;
+    font-size: 4.2em;
+    font-weight: 300;
+    transition: letter-spacing 500ms;
+    width: fit-content;
+    z-index: 1;
+}
+
+#menu .list li:not(:last-child) {
+    margin-bottom: 0.4em;
+}
+
+#menu .list li:hover {
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+}
+
+#menu .listCover img {
+    opacity: 0;
+    position: absolute;
+    width: 50%;
+    max-height: 60vh;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.8);
+    transition: opacity 500ms;
+}
+
+#menu .listCover img.display {
+    opacity: 1;
+}
+
+#menu .socialMedia {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 10%;
+    top: 95%;
+    transform: translate(0, -100%);
+}
+
+#menu .socialMedia li {
+    list-style: none;
+}
+
+#menu .socialMedia img {
+    width: 2.2em;
+    cursor: pointer;
+}
+
+#menu .socialMedia li:not(:last-child) {
+    margin-right: 1em;
+}

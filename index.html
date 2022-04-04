@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MC Hospitality Advisors</title>
+    <meta charset="UTF-8">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6d8474">
+    <meta name="msapplication-TileColor" content="#6d8474">
+    <meta name="theme-color" content="#ff0000">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="assets/logo.svg">
+
+        <div id="navbar">
+            <!--<div class="language">
+                <span class="selected">EN</span>
+                <span>PT</span>
+            </div>-->
+            <div class="menu">
+                <span>Menu</span>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.5 19">
+                    <line y1="0.5" x2="50" y2="0.5"/>
+                    <line x1="0.5" y1="9.5" x2="50.5" y2="9.5">
+                        <!-- OPEN -->
+                        <animateTransform class="open" attributeName="transform" attributeType="XML" begin="indefinite"
+                            type="translateX" to="-100%" dur="500ms" fill="freeze"></animateTransform>
+                        <!-- CLOSE -->
+                        <animateTransform class="close" attributeName="transform" attributeType="XML" begin="indefinite"
+                            type="translateX" to="0" dur="500ms" fill="freeze"></animateTransform>
+                    </line>
+                    <line x1="0.5" y1="18.5" x2="50.5" y2="18.5">
+                    </line>
+                </svg>
+                <!--<img class="icon" src="assets/menu.svg">-->
+            </div>
+        </div>
+    </nav>
+
+    <div id="menu">
+        <ul class="list">
+            <li>About us</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contacts</li>
+        </ul>
+
+        <div class="listCover">
+            <img src="assets/image_menu_1.jpg">
+            <img src="assets/image_menu_1.jpg">
+            <img src="assets/image_menu_1.jpg">
+            <img src="assets/image_menu_1.jpg">
+        </div>
+
+        <ul class="socialMedia">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/social/facebook.svg"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/social/instagram.svg"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><img src="assets/social/linkedin.svg"></a></li>
+        </ul>
+
+        <button type="button" class="btt-main" onclick="mailTo()">Get in touch</button>
+    </div>
+
+    <div id="landing">
+        <video autoplay muted loop>
+            <source src="assets/landing.mp4" type="video/mp4">
+        </video>
+
+        <div class="slogan">
+            <span>Experts in</span>
+            <span>hospitality</span>
+            <span>consulting</span>
+        </div>
+
+        <button type="button" class="btt-main" onclick="mailTo()">Get in touch</button>
+    </div>
+
+    <main>
+        <div>
+            <div class="content">
+                <div class="title">
+                    <span class="identifier">― 01 ―</span>
+                    <span class="main">MC Hospitality Advisors</span>
+                </div>
+                <div class="text">
+                    At MC Hospitality Advisors we are the local experts in hospitality consulting, specialized in the
+                    luxury segment for independent, boutique and lifestyle hotels.
+                </div>
+            </div>
+
+            <img src="assets/image1.jpg">
+        </div>
+        <div></div>
+        <div></div>
+    </main>
+
+    <main>
+    </main>
+</body>
+
+<script src="menu.js"></script>
+<script src="functions.js"></script>
+
+</html>
