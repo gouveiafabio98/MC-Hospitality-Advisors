@@ -8,7 +8,7 @@ var iconOpen = iconMenu.getElementsByClassName("open"),
     iconClose = iconMenu.getElementsByClassName("close");
 
 bttMenu.addEventListener("click", function() {
-    if(menu.status) {
+    if (menu.status) {
         menu.classList.remove("active");
         for (var i = 0; i < iconOpen.length; i++) {
             iconOpen[i].beginElement();
@@ -26,7 +26,7 @@ bttMenu.addEventListener("click", function() {
 var menuList = menu.querySelector(".list").children;
 var menuCover = menu.querySelector(".listCover").children;
 
-for(let i = 0; i<menuList.length; i++) {
+for (let i = 0; i < menuList.length; i++) {
     menuList[i].img = menuCover[i]
 
     menuList[i].addEventListener("mouseenter", menuItemEnter);
@@ -40,7 +40,3 @@ function menuItemEnter() {
 function menuItemLeave() {
     this.img.classList.remove("display");
 }
-
-
-    
-/*console.log(iconOpen);*/

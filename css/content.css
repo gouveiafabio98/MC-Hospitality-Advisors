@@ -1,0 +1,45 @@
+main>div {
+    height: 100vh;
+    display: grid;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;*/
+}
+
+main>div img {
+    max-height: 70vh;
+    border-radius: 100%;
+}
+
+main>div:nth-child(2n) {
+    background-color: var(--green);
+}
+
+main .content {
+    width: 30%;
+}
+
+main .title span {
+    display: block;
+    text-align: center;
+}
+
+main .title .identifier {
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+}
+
+main .title .main {
+    font-weight: 400;
+    font-size: 1.7em;
+    letter-spacing: 0.25em;
+}
+
+main .text {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
