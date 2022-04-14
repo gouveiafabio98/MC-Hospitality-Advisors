@@ -80,6 +80,7 @@ main .content .more {
     }
     main .content div:not(:first-child) {
         margin-top: 4em;
+        margin-left: 0;
     }
     main .content .right-side,
     main .content .left-side,
@@ -91,4 +92,5 @@ main .content .more {
 footer {
     background: var(--brown);
     color: var(--white);
+    padding: 3em 0;
 }
