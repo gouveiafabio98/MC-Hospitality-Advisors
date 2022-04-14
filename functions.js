@@ -9,4 +9,19 @@ function updateVh() {
 
 updateVh();
 
-window.addEventListener('resize', updateVh);
+window.addEventListener('resize', (event) => {
+    updateVh();
+    onScrollMenu();
+});
+
+
+window.addEventListener('load', (event) => {
+    document.body.classList.remove("preload");
+});
+
+function blockScroll() {
+    if (menu.status)
+        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+    else
+        document.getElementsByTagName("html")[0].style.overflowY = "scroll";
+}

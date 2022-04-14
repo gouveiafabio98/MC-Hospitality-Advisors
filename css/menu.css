@@ -6,14 +6,28 @@ nav {
     display: flex;
     align-items: center;
     height: fit-content;
+    animation: fade-in 1.5s;
+    transition: padding 500ms, background-color 500ms;
+}
+
+nav.scroll {
+    padding: 2em 0;
 }
 
 nav .logo {
     position: relative;
     transform: translate(-50%, 0);
     left: 50%;
-    height: 8vh;
+    height: 5em;
+    width: auto;
     cursor: pointer;
+    transition: fill 500ms, height 500ms;
+    fill: var(--white);
+}
+
+nav.scroll .logo {
+    fill: var(--brown);
+    height: 3em;
 }
 
 #navbar {
@@ -26,6 +40,11 @@ nav .logo {
     left: 95%;
     transform: translate(-100%, 0);
     width: fit-content;
+    transition: color 500ms;
+}
+
+nav.scroll #navbar {
+    color: var(--brown);
 }
 
 #navbar div:not(:last-child) {
@@ -46,14 +65,15 @@ nav .logo {
     letter-spacing: 0.3em;
 }
 
+nav.scroll #navbar .menu .icon {
+    stroke: var(--brown);
+}
+
 #navbar .menu .icon {
     height: 1rem;
     margin-left: 1rem;
-}
-
-#navbar .menu .icon line {
     fill: none;
-    stroke: #fff;
+    stroke: var(--white);
     stroke-miterlimit: 10;
 }
 
@@ -103,15 +123,12 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 0;
     color: white;
-    font-size: 4.2em;
+    font-size: 3.4em;
     font-weight: 300;
     transition: letter-spacing 500ms;
     width: fit-content;
     z-index: 1;
-}
-
-#menu .list li:not(:last-child) {
-    margin-bottom: 0.4em;
+    line-height: 9vh;
 }
 
 #menu .list li:hover {
@@ -155,4 +172,32 @@ nav .logo {
 
 #menu .socialMedia li:not(:last-child) {
     margin-right: 1em;
+}
+
+@media (max-width: 959px) {
+    nav .logo {
+        height: 3em;
+    }
+    #navbar .menu span {
+        display: none;
+    }
+    #menu .list {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 8vh;
+    }
+    #menu .list li {
+        font-size: 2.4em;
+    }
+    #menu .listCover {
+        display: none;
+    }
+    #menu .btt-main {
+        display: none;
+    }
+    #menu .socialMedia {
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
 }

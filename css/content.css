@@ -1,45 +1,94 @@
+main h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.75em;
+    margin: 1rem 0 4rem 0;
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+main span {
+    font-weight: 300;
+    font-size: 1.625em;
+}
+
 main>div {
-    height: 100vh;
-    display: grid;
-    /*display: flex;
+    min-height: calc(100vh + 100px);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;*/
 }
 
-main>div img {
-    max-height: 70vh;
-    border-radius: 100%;
+main>div:nth-child(2) {
+    background: #6D8474;
+    color: var(--white);
 }
 
-main>div:nth-child(2n) {
-    background-color: var(--green);
+main .content img {
+    max-height: 65vh;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 main .content {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-main .title span {
-    display: block;
-    text-align: center;
+main .content div:not(:first-child) {
+    margin-left: 2em;
 }
 
-main .title .identifier {
-    font-weight: 400;
+main .content .left-side {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .right-side {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .center-side {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .more {
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 1.5em;
-    letter-spacing: 0.5em;
+    text-align: right;
+    padding-top: 7rem;
 }
 
-main .title .main {
-    font-weight: 400;
-    font-size: 1.7em;
-    letter-spacing: 0.25em;
+@media (max-width: 959px) {
+    main .content {
+        flex-direction: column;
+        margin: 8em 0;
+    }
+    main .content div:not(:first-child) {
+        margin-top: 4em;
+    }
+    main .content .right-side,
+    main .content .left-side,
+    main .content .center-side {
+        width: 70vw;
+    }
 }
 
-main .text {
-    font-weight: 300;
-    font-size: 1em;
-    letter-spacing: 0.05em;
+footer {
+    background: var(--brown);
+    color: var(--white);
 }

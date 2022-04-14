@@ -2,25 +2,20 @@ var bttMenu = document.querySelector(".menu");
 var menu = document.getElementById("menu");
 menu.status = false;
 
-var iconMenu = bttMenu.querySelector(".icon");
-
-var iconOpen = iconMenu.getElementsByClassName("open"),
-    iconClose = iconMenu.getElementsByClassName("close");
+var nav = document.getElementsByTagName("nav")[0];
 
 bttMenu.addEventListener("click", function() {
     if (menu.status) {
         menu.classList.remove("active");
-        for (var i = 0; i < iconOpen.length; i++) {
-            iconOpen[i].beginElement();
-        }
+        onScrollMenu();
     } else {
         menu.classList.add("active");
-        for (var i = 0; i < iconClose.length; i++) {
-            iconClose[i].beginElement();
+        if (nav.classList.contains("scroll")) {
+            nav.classList.remove("scroll");
         }
     }
-
     menu.status = !menu.status;
+    blockScroll();
 });
 
 var menuList = menu.querySelector(".list").children;
@@ -39,4 +34,14 @@ function menuItemEnter() {
 
 function menuItemLeave() {
     this.img.classList.remove("display");
+}
+
+document.addEventListener('scroll', onScrollMenu);
+
+function onScrollMenu() {
+    if (window.scrollY > window.innerHeight - 100) {
+        nav.classList.add("scroll");
+    } else {
+        nav.classList.remove("scroll");
+    }
 }

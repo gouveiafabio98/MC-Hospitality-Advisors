@@ -4,52 +4,35 @@
 <head>
     <title>MC Hospitality Advisors</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- STYLESHEET -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/content.css" rel="stylesheet">
-    <link href="css/landings.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/media.css" rel="stylesheet">
+    <!-- ANIMATION ON SCROLL -->
+    <link href="aos/aos.css" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6d8474">
-    <meta name="msapplication-TileColor" content="#6d8474">
-    <meta name="theme-color" content="#ff0000">
 </head>
 
-<body>
+<body class="preload">
     <nav>
-        <img class="logo" src="assets/logo.svg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="119.54" height="50.87" viewBox="0 0 119.54 50.87" class="logo">
+            <path
+                d="M52.05.28,59.7,26.47l3.48,11.6,3.13,10.52.42,1.33H45.35L38.63,25.07,24.1,46.9,9.2,26.15Q7.06,33.74,4.5,44.79a31.64,31.64,0,0,1-1.32,5,1.66,1.66,0,0,1-1.64.79c-1,0-1.54-.35-1.54-1.05A32.47,32.47,0,0,1,1,46L3.17,38.5,7,25.56,14.4.28l19.24,27.9Z" />
+            <path
+                d="M85.23,4.17l6.86,24L98.3,48.37a23,23,0,0,0,3-.62,21.84,21.84,0,0,0,6.42-3.18,22.13,22.13,0,0,0,5.18-5A24.05,24.05,0,0,0,115.37,35a25.09,25.09,0,0,0,1.68-5.16c.19-.93.53-1.47,1-1.62.74-.22,1.2,0,1.39.62s0,2-.66,3.91a30.14,30.14,0,0,1-2.38,5.42A24.5,24.5,0,0,1,108,46.93a25.8,25.8,0,0,1-6.45,3,25.14,25.14,0,0,1-10.08.78A24.36,24.36,0,0,1,76.87,44,25.48,25.48,0,0,1,77.26,6.6a25,25,0,0,1,9.85-5.48,24.86,24.86,0,0,1,18.73,1.61q4.3,2.15,4.71,3.52a.94.94,0,0,1-.14.78,1.14,1.14,0,0,1-.65.52c-.45.13-1.11-.15-2-.84a21.18,21.18,0,0,0-9.52-4.09,23.33,23.33,0,0,0-10.73.62A11.69,11.69,0,0,0,85.23,4.17Z" />
+        </svg>
 
         <div id="navbar">
-            <!--<div class="language">
-                <span class="selected">EN</span>
-                <span>PT</span>
-            </div>-->
             <div class="menu">
                 <span>Menu</span>
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.5 19">
-                    <line y1="0.5" x2="50" y2="0.5"/>
-                    <line x1="0.5" y1="9.5" x2="50.5" y2="9.5">
-                        <!-- OPEN -->
-                        <animateTransform class="open" attributeName="transform" attributeType="XML" begin="indefinite"
-                            type="translateX" to="-100%" dur="500ms" fill="freeze"></animateTransform>
-                        <!-- CLOSE -->
-                        <animateTransform class="close" attributeName="transform" attributeType="XML" begin="indefinite"
-                            type="translateX" to="0" dur="500ms" fill="freeze"></animateTransform>
-                    </line>
-                    <line x1="0.5" y1="18.5" x2="50.5" y2="18.5">
-                    </line>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.5 19" class="icon">
+                    <line class="cls-1" y1="0.5" x2="50" y2="0.5" />
+                    <line class="cls-1" x1="0.5" y1="9.5" x2="50.5" y2="9.5" />
+                    <line class="cls-1" x1="0.5" y1="18.5" x2="50.5" y2="18.5" />
                 </svg>
-                <!--<img class="icon" src="assets/menu.svg">-->
             </div>
         </div>
     </nav>
@@ -63,21 +46,21 @@
         </ul>
 
         <div class="listCover">
-            <img src="assets/image_menu_1.jpg">
-            <img src="assets/image_menu_1.jpg">
-            <img src="assets/image_menu_1.jpg">
-            <img src="assets/image_menu_1.jpg">
+            <img src="content/image_menu_1.jpg">
+            <img src="content/image_menu_1.jpg">
+            <img src="content/image_menu_1.jpg">
+            <img src="content/image_menu_1.jpg">
         </div>
 
         <ul class="socialMedia">
             <li>
-                <a href="https://www.facebook.com/" target="_blank"><img src="assets/social/facebook.svg"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="content/social/facebook.svg"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assets/social/instagram.svg"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="content/social/instagram.svg"></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="assets/social/linkedin.svg"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="content/social/linkedin.svg"></a>
             </li>
         </ul>
 
@@ -86,7 +69,7 @@
 
     <div id="landing">
         <video autoplay muted loop>
-            <source src="assets/landing.mp4" type="video/mp4">
+            <source src="content/landing.mp4" type="video/mp4">
         </video>
 
         <div class="slogan">
@@ -98,26 +81,54 @@
         <button type="button" class="btt-main" onclick="mailTo()">Get in touch</button>
     </div>
 
-    <!--<main>
+    <main>
         <div>
             <div class="content">
-                <div class="title">
-                    <span class="identifier">― 01 ―</span>
-                    <span class="main">MC Hospitality Advisors</span>
+                <div class="left-side">
+                    <h2 data-aos="fade-right">01</h2>
+                    <h1 data-aos="fade-right">MC Hospitality Advisors</h1>
+                    <span data-aos="fade-right" id="content1">At MC Hospitality Advisors we are the local experts in hospitality consulting, specialized in the
+                luxury segment for independent, boutique and lifestyle hotels.</span>
                 </div>
-                <div class="text">
-                    At MC Hospitality Advisors we are the local experts in hospitality consulting, specialized in the luxury segment for independent, boutique and lifestyle hotels.
+                <div class="right-side" data-aos="fade-up" data-aos-anchor="#content1">
+                    <img src="content/image1.jpg">
                 </div>
             </div>
-
-            <img src="assets/image1.jpg">
         </div>
-        <div></div>
-        <div></div>
-    </main>-->
+        <div>
+            <div class="content">
+                <div class="center-side">
+                    <h2 data-aos="fade-up">02</h2>
+                    <h1 data-aos="fade-up">About Us</h1>
+                    <span data-aos="fade-up">We've been supporting hotel owners, whether they are individual, family offices, banks or investment funds from all over the world, with their projects in Portugal, for the past 20 years.</span>
+                    <span class="more" data-aos="fade-left"><a href="#">Read more...</a></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="content">
+                <div class="left-side" data-aos="fade-up" data-aos-anchor="#content2">
+                    <img src="content/image2.jpg">
+                </div>
+                <div class="right-side">
+                    <h2 data-aos="fade-left">03</h2>
+                    <h1 data-aos="fade-left">Why us?</h1>
+                    <span data-aos="fade-left" id="content2">Our hotel consulting services consistently delivers excellent results by offering an unique bespoke strategy to every asset.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button type="button" class="btt-main" onclick="mailTo()">Get in touch</button>
+    </footer>
 </body>
-
+<!-- SCRIPTS -->
 <script src="menu.js"></script>
 <script src="functions.js"></script>
+<!-- ANIMATION ON SCROLL -->
+<script src="aos/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

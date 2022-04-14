@@ -1,0 +1,66 @@
+#landing {
+    overflow: hidden;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+#landing video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    filter: brightness(0.9);
+    z-index: -1;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+@media only screen and (max-aspect-ratio: 16/9) {
+    #landing video {
+        height: 100%;
+        width: auto;
+    }
+}
+
+
+/* ---- SLOGAN ---- */
+
+#landing .slogan {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    font-size: 4.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    left: 5%;
+    top: 80%;
+    transform: translate(0%, -100%);
+}
+
+#landing .slogan span:nth-child(1) {
+    margin-left: 6rem;
+    animation: fade-right 800ms;
+}
+
+#landing .slogan span:nth-child(2) {
+    animation: fade-left 1200ms;
+}
+
+#landing .slogan span:nth-child(3) {
+    margin-left: 4rem;
+    animation: fade-right 1600ms;
+}
+
+#landing .btt-main {
+    animation: fade-in 1.5s;
+}
+
+@media (max-width: 959px) {
+    #landing .slogan {
+        font-size: 3em;
+        left: 5%;
+        transform: translate(0%, -100%);
+    }
+}
