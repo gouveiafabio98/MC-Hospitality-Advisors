@@ -29,7 +29,7 @@ main>div:nth-child(2) {
 }
 
 main .content img {
-    max-height: 65vh;
+    max-height: calc(var(--vh, 1vh) * 65);
     max-width: 100%;
     margin: 0 auto;
 }
