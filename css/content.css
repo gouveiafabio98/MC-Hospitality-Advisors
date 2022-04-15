@@ -107,9 +107,3 @@ main .content .more {
         margin-left: 0;
     }
 }
-
-footer {
-    background: var(--brown);
-    color: var(--white);
-    padding: 3em 0;
-}
