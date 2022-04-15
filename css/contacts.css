@@ -114,6 +114,7 @@ main .content.contacts div:not(:first-child) {
     width: 40px;
     position: absolute;
     left: 0;
+    top: -0.2rem;
 }
 
 main>div:nth-child(2n) .text-list li::before {
