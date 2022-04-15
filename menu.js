@@ -1,15 +1,17 @@
 var bttMenu = document.querySelector(".menu");
+var iconMenu = bttMenu.querySelector(".icon");
 var menu = document.getElementById("menu");
 menu.status = false;
 
 var nav = document.getElementsByTagName("nav")[0];
 
 bttMenu.addEventListener("click", function() {
+    iconMenu.classList.toggle("active");
+    menu.classList.toggle("active");
+
     if (menu.status) {
-        menu.classList.remove("active");
         onScrollMenu();
     } else {
-        menu.classList.add("active");
         if (nav.classList.contains("scroll")) {
             nav.classList.remove("scroll");
         }

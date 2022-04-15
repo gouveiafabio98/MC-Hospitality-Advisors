@@ -1,7 +1,7 @@
 footer {
     background: var(--brown);
     color: var(--white);
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 footer .content {
@@ -15,7 +15,7 @@ footer .content {
 
 footer .footer_logo {
     margin-right: 4vw;
-    height: 12em;
+    height: 10em;
 }
 
 footer .content .info {

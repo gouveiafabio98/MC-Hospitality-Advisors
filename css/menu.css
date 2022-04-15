@@ -80,19 +80,6 @@ nav.scroll #navbar {
     letter-spacing: 0.3em;
 }
 
-nav.scroll #navbar .menu .icon {
-    stroke: var(--brown);
-    margin: 0 1rem;
-}
-
-#navbar .menu .icon {
-    height: 1rem;
-    margin-left: 1rem;
-    fill: none;
-    stroke: var(--white);
-    stroke-miterlimit: 10;
-}
-
 #navbar .language {
     left: 95%;
     transform: translate(-100%, 0%);
@@ -216,4 +203,41 @@ nav.scroll #navbar .menu .icon {
         left: 50%;
         transform: translate(-50%, -100%);
     }
+}
+
+
+/* HAMBURGUER */
+
+nav.scroll #navbar .menu .icon {
+    stroke: var(--brown);
+    margin: 0 1rem;
+}
+
+#navbar .menu .icon {
+    height: 1rem;
+    margin-left: 1rem;
+    fill: none;
+    stroke: var(--white);
+    stroke-miterlimit: 10;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#navbar .menu .icon line {
+    transform-origin: 50%;
+    transition: transform 500ms 100ms;
+}
+
+#navbar .menu .icon.active .middle {
+    transform: scaleX(0);
+}
+
+#navbar .menu .icon.active .bottom {
+    transform: rotate(-22deg) translate( 0%, -50%);
+}
+
+#navbar .menu .icon.active .top {
+    transform: rotate(22deg) translate( 0%, 50%);
 }
