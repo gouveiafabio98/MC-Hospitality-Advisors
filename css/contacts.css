@@ -1,0 +1,63 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: transparent;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+textarea {
+    height: 30vh;
+    resize: vertical;
+    min-height: 30vh;
+}
+
+::placeholder {
+    text-transform: uppercase;
+}
+
+input[type=submit] {
+    background-color: rgba(53, 53, 53, 0.5);
+    border: transparent;
+    color: var(--white);
+    padding: 0.4rem 2rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3em;
+    border-radius: 0.5em;
+}
+
+.contact input[type=submit] {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.subtitle {
+    max-width: 42rem;
+}
+
+.contacts .info {
+    font-size: 0.9em;
+    line-height: 1.8rem;
+}
+
+.bold {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+main .content.contacts div:not(:first-child) {
+    margin-left: 4em;
+}

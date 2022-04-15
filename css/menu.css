@@ -155,25 +155,28 @@ nav.scroll #navbar {
     opacity: 1;
 }
 
-#menu .socialMedia {
-    position: absolute;
+.socialMedia {
     display: flex;
     flex-direction: row;
+}
+
+#menu .socialMedia {
+    position: absolute;
     left: 10%;
     top: 95%;
     transform: translate(0, -100%);
 }
 
-#menu .socialMedia li {
+.socialMedia li {
     list-style: none;
 }
 
-#menu .socialMedia img {
+.socialMedia img {
     width: 2.2em;
     cursor: pointer;
 }
 
-#menu .socialMedia li:not(:last-child) {
+.socialMedia li:not(:last-child) {
     margin-right: 1em;
 }
 
