@@ -46,6 +46,7 @@ input[type=submit] {
 
 .subtitle {
     max-width: 42rem;
+    margin: 3em 0 1em 0;
 }
 
 .contacts .info {
@@ -60,4 +61,29 @@ input[type=submit] {
 
 main .content.contacts div:not(:first-child) {
     margin-left: 4em;
+}
+
+@media (max-width: 959px) {
+    #landing .title {
+        font-size: 14vw;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+        text-align: center;
+    }
+    .content.contacts {
+        align-items: center;
+    }
+    .subtitle {
+        width: 70vw;
+    }
+    .subtitle+.content {
+        margin-top: 0;
+    }
+    .contacts span:not(.text) {
+        text-align: center;
+    }
+    .content .socialMedia {
+        justify-content: center;
+    }
 }
