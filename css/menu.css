@@ -216,10 +216,10 @@ nav.scroll #navbar {
 
 nav.scroll #navbar .menu .icon {
     stroke: var(--brown);
-    margin: 0 1rem;
 }
 
 #navbar .menu .icon {
+    margin: 0 1rem;
     height: 1rem;
     margin-left: 1rem;
     fill: none;
