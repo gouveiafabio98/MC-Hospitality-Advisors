@@ -148,7 +148,7 @@ nav.scroll #navbar {
     left: 55%;
     top: 50%;
     transform: translate(-50%, -50%);
-    filter: brightness(0.8);
+    filter: brightness(0.5);
     transition: opacity 500ms;
 }
 

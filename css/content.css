@@ -13,7 +13,7 @@ main h2 {
 
 main span {
     font-weight: 300;
-    font-size: 1.625em;
+    font-size: 1.4em;
 }
 
 main>div {
@@ -23,7 +23,7 @@ main>div {
     align-items: center;
 }
 
-main>div:nth-child(2) {
+main>div:nth-child(2n) {
     background: #6D8474;
     color: var(--white);
 }
@@ -45,14 +45,14 @@ main .content div:not(:first-child) {
 }
 
 main .content .left-side {
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 main .content .right-side {
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
