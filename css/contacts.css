@@ -110,14 +110,14 @@ main .content.contacts div:not(:first-child) {
 
 .text-list li::before {
     display: inline;
-    content: url('/content/list-icon-b.svg');
+    content: url('../content/list-icon-b.svg');
     width: 40px;
     position: absolute;
     left: 0;
 }
 
 main>div:nth-child(2n) .text-list li::before {
-    content: url('/content/list-icon.svg');
+    content: url('../content/list-icon.svg');
 }
 
 .description {
