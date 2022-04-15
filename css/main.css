@@ -15,6 +15,7 @@
 body {
     background-color: var(--white);
     font-size: 100%;
+    overflow-x: hidden;
 }
 
 .preload *:not([data-aos]) {

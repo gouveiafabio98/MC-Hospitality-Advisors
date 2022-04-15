@@ -1,7 +1,7 @@
 nav {
     position: fixed;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     padding: 3em 0;
     display: flex;
     align-items: center;
@@ -11,7 +11,23 @@ nav {
 }
 
 nav.scroll {
-    padding: 2em 0;
+    padding: 1em 0;
+}
+
+nav .nav_back {
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform 200ms;
+    box-shadow: 0px 1px 8px var(--gray)
+}
+
+nav.scroll .nav_back {
+    transition: transform 1000ms;
+    transform: translateY(0);
 }
 
 nav .logo {
@@ -27,7 +43,7 @@ nav .logo {
 
 nav.scroll .logo {
     fill: var(--brown);
-    height: 3em;
+    height: 2em;
 }
 
 #navbar {
@@ -67,6 +83,7 @@ nav.scroll #navbar {
 
 nav.scroll #navbar .menu .icon {
     stroke: var(--brown);
+    margin: 0 1rem;
 }
 
 #navbar .menu .icon {
@@ -96,7 +113,7 @@ nav.scroll #navbar .menu .icon {
 #menu {
     position: fixed;
     z-index: 2;
-    width: 100%;
+    width: 100vw;
     transform: translate(0, -100%);
     height: 100vh;
     background-color: var(--brown);

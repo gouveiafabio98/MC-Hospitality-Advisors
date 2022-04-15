@@ -87,6 +87,25 @@ main .content .more {
     main .content .center-side {
         width: 70vw;
     }
+    main h1 {
+        font-size: 3em;
+    }
+    main h2 {
+        font-size: 2em;
+    }
+    main span {
+        font-size: 1em;
+    }
+    main .content.left {
+        flex-direction: column-reverse;
+    }
+    main .content.left :last-child {
+        margin-top: 0em;
+    }
+    main .content.left div:not(:last-child) {
+        margin-top: 4em;
+        margin-left: 0;
+    }
 }
 
 footer {
