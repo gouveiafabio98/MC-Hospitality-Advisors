@@ -2,6 +2,10 @@ function mailTo() {
     window.location.href = 'mailto:rita@mchospitalityadvisors.com'
 }
 
+function contacts() {
+    window.location.href = 'contacts.html'
+}
+
 function updateVh() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
