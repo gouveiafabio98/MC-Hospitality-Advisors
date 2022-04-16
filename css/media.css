@@ -29,7 +29,8 @@
         font-size: 2em;
     }
     main span,
-    .text-list {
+    .text-list,
+    main .content .more {
         font-size: 1.3em;
     }
     main .content.left {
