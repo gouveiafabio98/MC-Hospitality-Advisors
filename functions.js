@@ -54,7 +54,7 @@ window.onload = function() {
 }
 
 function scrollerMenu() {
-    if (menu.status) {
+    if (!menu.classList.contains("active")) {
         scroller.start();
         onScrollMenu(scroller.scroll.instance.scroll.y);
     } else {
