@@ -1,3 +1,4 @@
+var htmlMain = document.getElementsByTagName("html")[0];
 var bttMenu = document.querySelector(".menu");
 var iconMenu = bttMenu.querySelector(".icon");
 var menu = document.getElementById("menu");
