@@ -10,8 +10,6 @@ bttMenu.addEventListener("click", function() {
     menu.classList.toggle("active");
 
     scrollerMenu();
-
-    menu.status = !menu.status;
 });
 
 var menuList = menu.querySelector(".list").children;
