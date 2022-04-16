@@ -15,7 +15,7 @@ updateVh();
 
 window.addEventListener('resize', (event) => {
     updateVh();
-    onScrollMenu();
+    onScrollMenu(scroller.scroll.instance.scroll.y);
 });
 
 
