@@ -47,3 +47,7 @@ let observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('[data-aos]').forEach(aosElem => {
     observer.observe(aosElem)
 });
+
+window.onload = function() {
+    scroller.update();
+}
