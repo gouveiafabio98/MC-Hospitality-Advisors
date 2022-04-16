@@ -34,6 +34,10 @@ scroller.on('scroll', (instance) => {
     onScrollMenu(instance.scroll.y);
 });
 
+scroller.on('scrollFinished', (instance) => {
+    onScrollMenu(instance.scroll.y);
+});
+
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
