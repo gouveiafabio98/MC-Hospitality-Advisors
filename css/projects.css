@@ -50,7 +50,7 @@ h1.subtitle:first-child {
     padding: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1200px) {
     main .projects .subtitle {
         max-width: none!important;
         text-align: left!important;
