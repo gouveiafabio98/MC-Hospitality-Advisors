@@ -46,10 +46,6 @@ main .projects .right .location {
     text-align: right;
 }
 
-h1.subtitle:first-child {
-    padding: 0;
-}
-
 @media (max-width: 1200px) {
     main .projects .subtitle {
         max-width: none!important;
