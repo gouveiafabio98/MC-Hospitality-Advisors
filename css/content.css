@@ -40,6 +40,14 @@ main .content {
     align-items: flex-start;
 }
 
+main .content:first-child {
+    padding-top: 8em;
+}
+
+main .content:last-child {
+    padding-bottom: 8em;
+}
+
 main .content div:not(:first-child) {
     margin-left: 2em;
 }
