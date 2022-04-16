@@ -68,19 +68,3 @@
 #landing .btt-main {
     animation: fade-in 1.5s;
 }
-
-@media (max-width: 959px) {
-    #landing .slogan {
-        font-size: 3em;
-        left: 5%;
-        transform: translate(0%, -100%);
-    }
-}
-
-@media (max-width: 550px) {
-    #landing .slogan {
-        font-size: 10vw;
-        left: 5%;
-        transform: translate(0%, -100%);
-    }
-}

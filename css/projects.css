@@ -45,23 +45,3 @@ main .projects .location {
 main .projects .right .location {
     text-align: right;
 }
-
-@media (max-width: 1200px) {
-    main .projects .subtitle {
-        max-width: none!important;
-        text-align: left!important;
-        left: 0!important;
-    }
-    main .projects .content {
-        margin: 0;
-    }
-    main .projects .right .content {
-        flex-direction: column-reverse;
-    }
-    main .projects .right .content div:not(:first-child) {
-        margin: 0 0 4em 0!important;
-    }
-    main .projects .right .location {
-        text-align: left;
-    }
-}

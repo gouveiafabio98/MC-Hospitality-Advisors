@@ -67,12 +67,6 @@ a {
     transform: translate(-100%, -100%);
 }
 
-@media (max-width: 959px) {
-    .btt-main {
-        font-size: 1.4em;
-    }
-}
-
 @keyframes fade-in {
     from {
         opacity: 0;

@@ -181,36 +181,6 @@ nav.scroll #navbar {
     margin-right: 1em;
 }
 
-@media (max-width: 959px) {
-    nav .logo {
-        height: 3em;
-    }
-    #navbar .menu span {
-        display: none;
-    }
-    #menu .list {
-        margin: 0;
-        align-items: center;
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        line-height: calc(var(--vh, 1vh) * 8);
-    }
-    #menu .list li {
-        font-size: 2.4em;
-    }
-    #menu .listCover {
-        display: none;
-    }
-    #menu .btt-main {
-        display: none;
-    }
-    #menu .socialMedia {
-        left: 50%;
-        transform: translate(-50%, -100%);
-    }
-}
-
 
 /* HAMBURGUER */
 
