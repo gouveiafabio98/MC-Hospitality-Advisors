@@ -29,3 +29,22 @@ function blockScroll() {
     else
         document.getElementsByTagName("html")[0].style.overflowY = "scroll";
 }
+
+
+const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+AOS.init();
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('aos-animate');
+        } else {
+            entry.target.classList.remove('aos-animate');
+        }
+    });
+});
+document.querySelectorAll('[data-aos]').forEach(aosElem => {
+    observer.observe(aosElem)
+});
