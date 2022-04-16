@@ -16,6 +16,7 @@ updateVh();
 window.addEventListener('resize', (event) => {
     updateVh();
     onScrollMenu(scroller.scroll.instance.scroll.y);
+    scrollerMenu();
 });
 
 
@@ -31,10 +32,6 @@ const scroller = new LocomotiveScroll({
 });
 
 scroller.on('scroll', (instance) => {
-    onScrollMenu(instance.scroll.y);
-});
-
-scroller.on('scrollFinished', (instance) => {
     onScrollMenu(instance.scroll.y);
 });
 
@@ -54,4 +51,16 @@ document.querySelectorAll('[data-aos]').forEach(aosElem => {
 
 window.onload = function() {
     scroller.update();
+}
+
+function scrollerMenu() {
+    if (menu.status) {
+        scroller.start();
+        onScrollMenu(scroller.scroll.instance.scroll.y);
+    } else {
+        scroller.stop();
+        if (nav.classList.contains("scroll")) {
+            nav.classList.remove("scroll");
+        }
+    }
 }

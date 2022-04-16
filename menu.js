@@ -9,15 +9,8 @@ bttMenu.addEventListener("click", function() {
     iconMenu.classList.toggle("active");
     menu.classList.toggle("active");
 
-    if (menu.status) {
-        scroller.start();
-        onScrollMenu(scroller.scroll.instance.scroll.y);
-    } else {
-        scroller.stop();
-        if (nav.classList.contains("scroll")) {
-            nav.classList.remove("scroll");
-        }
-    }
+    scrollerMenu();
+
     menu.status = !menu.status;
 });
 
