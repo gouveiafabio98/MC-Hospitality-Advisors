@@ -2,10 +2,6 @@ main .projects {
     flex-direction: column;
 }
 
-main .projects>div:not(:first-child) {
-    margin-top: 8em;
-}
-
 main .projects .left .left-side,
 main .projects .right .right-side {
     width: 25vw;
@@ -33,7 +29,7 @@ main .projects .right .subtitle {
 }
 
 main .projects {
-    padding: 8em 0;
+    padding-top: calc(var(--vh, 1vh) * 20);
 }
 
 main .projects .project-img {
@@ -48,4 +44,28 @@ main .projects .location {
 
 main .projects .right .location {
     text-align: right;
+}
+
+h1.subtitle:first-child {
+    padding: 0;
+}
+
+@media (max-width: 959px) {
+    main .projects .subtitle {
+        max-width: none!important;
+        text-align: left!important;
+        left: 0!important;
+    }
+    main .projects .content {
+        margin: 0;
+    }
+    main .projects .right .content {
+        flex-direction: column-reverse;
+    }
+    main .projects .right .content div:not(:first-child) {
+        margin: 0 0 4em 0!important;
+    }
+    main .projects .right .location {
+        text-align: left;
+    }
 }

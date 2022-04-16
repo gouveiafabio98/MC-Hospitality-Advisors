@@ -41,11 +41,11 @@ main .content {
 }
 
 main .content:first-child {
-    padding-top: 8em;
+    padding-top: calc(var(--vh, 1vh) * 20);
 }
 
 main .content:last-child {
-    padding-bottom: 8em;
+    padding-bottom: calc(var(--vh, 1vh) * 20);
 }
 
 main .content div:not(:first-child) {
@@ -97,7 +97,7 @@ main .content .more {
     main .content .left-side,
     main .content .center-side,
     main .description {
-        width: 70vw;
+        width: 70vw!important;
     }
     main h1 {
         font-size: 3em;

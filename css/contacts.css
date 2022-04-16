@@ -63,6 +63,10 @@ main .content.contacts div:not(:first-child) {
     margin-left: 4em;
 }
 
+main .content.contacts:last-child {
+    margin: 0;
+}
+
 .text-list {
     columns: 2;
     -webkit-columns: 2;
@@ -103,13 +107,17 @@ main>div:nth-child(2n) .text-list li::before {
 }
 
 .description:last-child {
-    margin-bottom: 8em;
+    padding-bottom: calc(var(--vh, 1vh) * 20);
 }
 
 .description span.subtitle {
     display: block;
     max-width: 100%;
     margin: 0 0 2rem 0;
+}
+
+h1.subtitle:first-child {
+    padding-top: 4em;
 }
 
 @media (max-width: 959px) {
