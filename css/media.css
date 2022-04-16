@@ -105,7 +105,8 @@
         margin: 5em 0 0 0;
         height: 10em;
     }
-    footer .btt-main {
+    footer .btt-main,
+    #landing .btt-main {
         display: none;
     }
     main h1 {
