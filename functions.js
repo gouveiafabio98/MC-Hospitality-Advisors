@@ -23,19 +23,17 @@ window.addEventListener('load', (event) => {
     document.body.classList.remove("preload");
 });
 
-function blockScroll() {
-    if (menu.status)
-        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-    else
-        document.getElementsByTagName("html")[0].style.overflowY = "scroll";
-}
-
+AOS.init();
 
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
 });
-AOS.init();
+
+scroller.on('scroll', (instance) => {
+    onScrollMenu(instance.scroll.y);
+});
+
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -45,6 +43,7 @@ let observer = new IntersectionObserver((entries, observer) => {
         }
     });
 });
+
 document.querySelectorAll('[data-aos]').forEach(aosElem => {
     observer.observe(aosElem)
 });

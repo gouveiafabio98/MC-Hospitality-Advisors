@@ -10,14 +10,15 @@ bttMenu.addEventListener("click", function() {
     menu.classList.toggle("active");
 
     if (menu.status) {
-        onScrollMenu();
+        scroller.start();
+        onScrollMenu(scroller.scroll.instance.scroll.y);
     } else {
+        scroller.stop();
         if (nav.classList.contains("scroll")) {
             nav.classList.remove("scroll");
         }
     }
     menu.status = !menu.status;
-    blockScroll();
 });
 
 var menuList = menu.querySelector(".list").children;
@@ -38,10 +39,8 @@ function menuItemLeave() {
     this.img.classList.remove("display");
 }
 
-document.addEventListener('scroll', onScrollMenu);
-
-function onScrollMenu() {
-    if (window.scrollY > window.innerHeight - 100) {
+function onScrollMenu(scrollY) {
+    if (scrollY > window.innerHeight - 100) {
         nav.classList.add("scroll");
     } else {
         nav.classList.remove("scroll");
