@@ -57,12 +57,10 @@ function scrollerMenu() {
     if (!menu.classList.contains("active")) {
         scroller.start();
         onScrollMenu(scroller.scroll.instance.scroll.y);
-        htmlMain.style.overflow = "scroll";
     } else {
         scroller.stop();
         if (nav.classList.contains("scroll")) {
             nav.classList.remove("scroll");
         }
-        htmlMain.style.overflow = "hidden";
     }
 }
