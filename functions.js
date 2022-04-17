@@ -35,13 +35,20 @@ scroller.on('scroll', (instance) => {
     onScrollMenu(instance.scroll.y);
 });
 
+var previousY = 0,
+    currentY = 0;
+
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('aos-animate');
-        } else {
+        currentY = scroller.scroll.instance.scroll.y;
+        if (currentY >= previousY) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('aos-animate');
+            }
+        } else if (!entry.isIntersecting) {
             entry.target.classList.remove('aos-animate');
         }
+        previousY = currentY;
     });
 });
 
